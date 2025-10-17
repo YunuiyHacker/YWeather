@@ -1,4 +1,4 @@
-package yunuiy_hacker.ryzhaya_tetenka.yweather.presentation.common.composable.state
+package yunuiy_hacker.ryzhaya_tetenka.yweather.presentation.common.state
 
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf

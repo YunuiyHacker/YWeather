@@ -70,6 +70,7 @@ dependencies {
     //accompanist
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.36.0")
     implementation("com.google.accompanist:accompanist-navigation-animation:0.36.0")
+    implementation("com.google.accompanist:accompanist-permissions:0.37.3")
 
     //splash-api
     implementation("androidx.core:core-splashscreen:1.0.1")
@@ -99,6 +100,7 @@ dependencies {
 
     implementation("com.google.android.gms:play-services-location:21.3.0")
 
+    implementation("androidx.compose.ui:ui-graphics:1.9.3")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)

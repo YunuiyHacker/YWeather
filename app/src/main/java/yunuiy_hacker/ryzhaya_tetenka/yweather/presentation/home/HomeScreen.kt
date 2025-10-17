@@ -23,9 +23,9 @@ import androidx.navigation.NavController
 @Composable
 fun HomeScreen(navHostController: NavController, viewModel: HomeViewModel = hiltViewModel()) {
 
-    LaunchedEffect(Unit) {
-        viewModel.onEvent(HomeEvent.LoadDataEvent)
-    }
+//    LaunchedEffect(Unit) {
+//        viewModel.onEvent(HomeEvent.LoadDataEvent)
+//    }
 
     viewModel.state.let { state ->
         Scaffold() {
@@ -34,17 +34,7 @@ fun HomeScreen(navHostController: NavController, viewModel: HomeViewModel = hilt
                     .fillMaxWidth()
                     .padding(it)
             ) {
-                AnimatedVisibility(!state.contentState.isLoading.value) {
-                    Box(modifier = Modifier.fillMaxSize()) {
-                        Text(
-                            modifier = Modifier.align(Alignment.Center),
-                            text = "${state.userPlace.lat} x ${state.userPlace.lon} x ${state.userPlace.address?.village} x ${state.geomagneticStorm}",
-                            color = Color.White,
-                            fontSize = 24.sp,
-                            fontWeight = FontWeight.Bold
-                        )
-                    }
-                }
+
             }
         }
     }
